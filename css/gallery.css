@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+
+/*---------------------------Layout with Flexbox-------------------------------*/
+.gallery {
+ display: flex;
+ flex-wrap: wrap-reverse;
+ flex-direction: row-reverse;
+ justify-content: center; 
+ margin-top: 3%;
+ margin-left: 10%;
+ margin-right: 10%;
+
+}
+
+figure {
+/*  background: #eee;*/
+  margin: 0em;
+  padding: .5em;
+  flex: 0 0 200px;
+  
+  /* Child & Also Parent   */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/*-----------------------------Gallery Styling--------------------------------------*/
+/*First Frame*/
+figure .thumb {
+    outline: #ffffff solid 5px;
+    filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -mox-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: filter .5s;
+    transition: outline .5s;
+}
+
+
+/*Second Frame*/
+figure .thumb:active{
+    filter: none;
+    outline: #C0B283 solid 5px;
+}
+
+
+figure p {
+  
+}
+
+.thumb{
+    height: 350px;
+    width: 350px;
+}
+
+/*-----------Thumbnail Ordering--------------*/
+#1 {
+  order: 5;
+}
+
+#2 {
+  order: 4;
+}
+
+#3 {
+  order: 3;
+}
+
+#4 {
+  order: 2;
+}
+
+#5 {
+  order: 15;
+}
+
+#6 {
+  order: 11;
+}
+
+#7 {
+  order: 12;
+}
+
+#8 {
+  order: 8;
+}
+
+#9 {
+  order: 6;
+}
+
+#10 {
+  order: 7;
+}
+
+#11 {
+  order: 10;
+}
+
+#12 {
+  order: 9;
+}
+
+#13 {
+  order: 14;
+}
+
+#14 {
+  order: 13;
+}
+
+#15 {
+  order: 21;
+}
+
+#16 {
+  order: 17;
+}
+
+#17 {
+  order: 16;
+}
+
+#18 {
+  order: 18;
+}
+
+#19 {
+  order: 20;
+}
+
+#20 {
+  order: 19;
+}
+
+#21 {
+  order: -1;
+}
+
+/*-----------------------------Lightbox Overlay-----------------------------*/
+/****hide*****/
+.overlay {
+  display: none;
+  
+/*-----------------------------Overlay Styling------------------------------*/
+  background:rgba(188, 143, 143, .5);
+  box-shadow: inset 0px -200px 500px 50px rgba(188, 143, 143,1); 
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  
+  animation: fadeIn 1s;
+}
+
+.overlay img{
+    max-width:98%;
+    width: 920px;
+}
+
+/*****show*****/
+.overlay:target {
+  display: block;
+    
+/*----------------------Flexbox Vertical & Horizontal Centering---------------*/
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center;  
+  
+  animation: fadeIn .5s;
+}
+
+/*---------------Caption--------------*/
+
+#caption p{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#caption{
+    border-radius: .5em;
+    background: rgba(255,255,255,.5);
+    width: 90%;
+}
+
+#poachedidpkg{
+    max-height: 70%;
+    width: 500px;
+}
+
+/*-----------------------------------Close Button-------------------------------*/
+.overlay a { 
+  color: #373737;
+  text-decoration: none;
+  font-size: 3em;
+}
+
+.row .icon{
+    margin-right: .4em;
+    width: .7em;
+    height: .7em;
+}
+
+/*------------------------------------Animation*---------------------------------*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/*--------------------------------Media Queries---------------------------------*/
+
+@media (min-width: 1024px) and (min-width: 768px){
+    .overlay img { max-width: 80%;
+    }
+        
+    .thumb{
+        max-height: 270px;
+        max-width: 270px;
+    }
+    
+    .thumb:hover{
+    filter: none;
+    outline: #C0B283 solid 5px;
+    }
+    
+    #caption{
+    width: 50%;
+}
+
