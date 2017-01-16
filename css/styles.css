@@ -10,11 +10,15 @@
 /*-------------------------- Page Styling ------------------------------------*/
 
 #logo {
-    width: 50px;
+    width: 100px;
+    justify-content: center;
 }
 
 nav a {
+    position: relative;
+    top: 55px;
     text-decoration: none;
+    padding: 2em;
 }
 
 p {
@@ -23,6 +27,7 @@ p {
     font-weight: 300;
     font-size: 1em;
     color: #373737;
+    text-align: center;
 }
 
 h1 {
@@ -32,11 +37,12 @@ h1 {
     font-weight: 700;
     font-size: 2.4em;
     color: #373737;
+    text-align: center;
 }
 
 .navlink {
     font-family: 'Source Sans Pro', sans-serif;
-    color: #373737;
+    color: #000;
     text-decoration: none;
     font-weight: 300;
     font-size: 1.1em;
