@@ -2,13 +2,204 @@
 
 /*-------------------------- Global ------------------------------------*/
 
-*{
+* {
     box-sizing: border-box;
-  
 }
+
 
 /*-------------------------- Page Styling ------------------------------------*/
 
-logo {
-    
+#logo {
+    width: 50px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 1em;
+    color: #373737;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: -.4em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 2.4em;
+    color: #373737;
+}
+
+.navlink {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #373737;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+a:active {
+    background: none;
+}
+
+p.footer {
+    font-size: .9em;
+}
+
+.ficon {
+    display: inline;
+    height: 60%;
+    margin-left: .5em;
+}
+
+
+
+/*------------------------Transitions---------------------------------*/
+
+
+/*First Frame*/
+
+#portfolio {
+    color: #C0B283;
+    font-weight: 700;
+    transition: color .5s;
+}
+
+
+/*Second Frame*/
+
+#portfolio:hover {
+    color: #373737;
+    background: none;
+}
+
+
+/*First Frame*/
+
+a {
+    color: #C0B283;
+    font-weight: 400;
+    transition: color .5s;
+}
+
+
+/*Second Frame*/
+
+a:hover {
+    color: rosybrown;
+    background: none;
+}
+
+
+/*--------------------------Layout------------------------------------*/
+
+.row {
+    margin: 10px 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+nav {
+    flex-wrap: nowrap;
+}
+
+/*------------------------Media Queries-------------------------*/
+
+@media (min-width: 760px) {
+    .arrow {
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+    @media (max-width: 450px) {
+        .resume {
+            padding: 0;
+            margin-top: 0em;
+            margin-bottom: 10em;
+            border: none;
+            box-shadow: none;
+        }
+        form {
+            border: none;
+            box-shadow: none;
+            margin-top: 0em;
+            margin-bottom: 10em;
+            background: none;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 768) {
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+    }
+    @media (max-width: 1024px) {
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        .arrow {
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+        .arrow {
+            margin-bottom: 10px;
+            margin-top: 2px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .resume {
+            max-width: 60%;
+            padding: 0 2em 0 2em;
+            width: 60%;
+        }
+        .long {
+            display: : flex;
+            column-count: 3;
+            column-gap: 60px;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-bottom: 3%;
+        }
+    }
+    @media (min-width: 1024px) and (min-width: 1217px) {
+        .arrow {
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+        nav.row {
+            margin: 10px 0;
+            width: 100%;
+            justify-content: center;
+        }
+        a.col {
+            margin-left: 90px;
+            margin-right: 90px;
+        }
+        .navlink {
+            font-size: 1.7em;
+        }
+        .content {
+            flex-flow: row;
+        }
+        .content {
+            /*    background: #ccc;*/
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            font-size: 1.37em;
+        }
+        h1 {
+            font-size: 3.3em;
+        }
+    }
 }
