@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700');
-
 /*-------------------------- Global ------------------------------------*/
 
 * {
@@ -9,6 +8,27 @@
 
 /*-------------------------- Page Styling ------------------------------------*/
 
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.knockout-text-one {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    background: url('img/city.jpg') no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 28vw;
+    text-align: center;
+}
 
 nav a {
     text-decoration: none;
@@ -34,7 +54,7 @@ p {
     text-align: center;
 }
 
-h1 {
+h2 {
     margin-top: 0;
     margin-bottom: -.4em;
     font-family: 'Source Sans Pro', sans-serif;
@@ -205,7 +225,7 @@ main {
         p {
             font-size: 1.37em;
         }
-        h1 {
+        h2 {
             font-size: 3.3em;
         }
     }
