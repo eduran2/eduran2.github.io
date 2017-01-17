@@ -7,17 +7,21 @@
 
 
 /*-------------------------- Page Styling ------------------------------------*/
-
-h1 {
+div {
     margin: 0;
     padding: 0;
     background: #000;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 .knockout-text-one {
-    color: black;
+    color: #fff;
     font-family: 'Oswald', sans-serif;
-    background: url("drake.jpg")no-repeat;
+    background: url("eduran2.github.io/img/drake.jpg")no-repeat;
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
