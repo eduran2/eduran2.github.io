@@ -9,10 +9,6 @@
 
 /*-------------------------- Page Styling ------------------------------------*/
 
-#logo {
-    width: 100px;
-    justify-content: center;
-}
 
 nav a {
     position: relative;
@@ -69,25 +65,8 @@ p.footer {
 
 /*First Frame*/
 
-#portfolio {
-    color: #C0B283;
-    font-weight: 700;
-    transition: color .5s;
-}
-
-
-/*Second Frame*/
-
-#portfolio:hover {
-    color: #373737;
-    background: none;
-}
-
-
-/*First Frame*/
-
 a {
-    color: skyblue;
+    color: darkseagreen;
     font-weight: 400;
     transition: color .5s;
 }
@@ -96,7 +75,7 @@ a {
 /*Second Frame*/
 
 a:hover {
-    color: aliceblue;
+    color: darkseagreen;
     background: none;
 }
 
