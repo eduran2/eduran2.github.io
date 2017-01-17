@@ -21,9 +21,9 @@ h1 {
 .knockout-text-one {
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    background: url("eduran2.github.io/img/drake.jpg")no-repeat;
+    background: url('img/ocean.jpg')no-repeat;
     background-size: cover;
-    -webkit-text-fill-color: transparent;
+    -webkit-font-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 28vw;
     text-align: center;
@@ -65,7 +65,7 @@ h2 {
 
 .navlink {
     font-family: 'Source Sans Pro', sans-serif;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: 300;
     font-size: 1.1em;
