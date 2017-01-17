@@ -19,14 +19,14 @@ h1 {
 }
 
 .knockout-text-one {
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    background: url('img/ocean.jpg')no-repeat;
-    background-size: cover;
-    -webkit-font-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 28vw;
-    text-align: center;
+    color: white;
+ font-family: 'Oswald', sans-serif;
+ background: url(/images/ocean.jpg) no-repeat;
+ background-size: cover;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ font-size: 28vw;
+ text-align: center;
 }
 
 nav a {
