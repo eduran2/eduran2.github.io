@@ -56,7 +56,6 @@ p.footer {
 }
 
 
-
 /*------------------------Transitions---------------------------------*/
 
 
@@ -102,29 +101,32 @@ nav {
     flex-flow: row ;
     justify-content: space-around; 
 }
+
+.content-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlink {
+    display: block;
+    text-decoration: none;
+}
+
+main {
+    background: #ededed;
+    margin-top: .5em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.me {
+     margin-left: 5%;
+    margin-right: 5%;
+}
 /*------------------------Media Queries-------------------------*/
 
-@media (min-width: 760px) {
-    .arrow {
-        margin-bottom: 30px;
-        margin-top: 5px;
-    }
-    @media (max-width: 450px) {
-        .resume {
-            padding: 0;
-            margin-top: 0em;
-            margin-bottom: 10em;
-            border: none;
-            box-shadow: none;
-        }
-        form {
-            border: none;
-            box-shadow: none;
-            margin-top: 0em;
-            margin-bottom: 10em;
-            background: none;
-        }
-    }
     @media (min-width: 768px) and (max-width: 768) {
         .row {
             display: flex;
@@ -138,24 +140,11 @@ nav {
             flex-flow: row wrap;
             justify-content: space-around;
         }
-        .arrow {
-            margin-bottom: 30px;
-            margin-top: 5px;
-        }
-        .arrow {
-            margin-bottom: 10px;
-            margin-top: 2px;
-        }
     }
     @media (min-width: 1024px) {
-        .resume {
-            max-width: 60%;
-            padding: 0 2em 0 2em;
-            width: 60%;
-        }
-        .long {
-            display: : flex;
-            column-count: 3;
+        
+        .me {
+            display: : block;
             column-gap: 60px;
             margin-left: 5%;
             margin-right: 5%;
@@ -163,27 +152,24 @@ nav {
         }
     }
     @media (min-width: 1024px) and (min-width: 1217px) {
-        .arrow {
-            margin-bottom: 30px;
-            margin-top: 5px;
-        }
+        
         nav.row {
             margin: 10px 0;
             width: 100%;
             justify-content: center;
         }
-        a.col {
+        .navlink {
             margin-left: 90px;
             margin-right: 90px;
         }
         .navlink {
             font-size: 1.7em;
         }
-        .content {
+        .content-info {
             flex-flow: row;
         }
-        .content {
-            /*    background: #ccc;*/
+        .content-info {
+            
             display: flex;
             flex-flow: column;
             justify-content: center;
