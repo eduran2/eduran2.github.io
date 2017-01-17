@@ -36,7 +36,7 @@ h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-size: 2.4em;
-    color: #373737;
+    color: #000;
     text-align: center;
 }
 
@@ -87,7 +87,7 @@ p.footer {
 /*First Frame*/
 
 a {
-    color: #C0B283;
+    color: skyblue;
     font-weight: 400;
     transition: color .5s;
 }
@@ -96,7 +96,7 @@ a {
 /*Second Frame*/
 
 a:hover {
-    color: rosybrown;
+    color: aliceblue;
     background: none;
 }
 
