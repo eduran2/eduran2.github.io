@@ -199,14 +199,14 @@ main {
     }
 }
     
-@media all and (min-width: 480px) and (max-width: 600px) {
+@media screen only (min-width: 480px) and (max-width: 600px) {
     #subhead {
         font-size: 25px;
         margin-top: 50px;
     }
     
     .navlink {
-        font-size: .5em;
+        font-size: 1em;
         margin-top: 10px;
     }
     
@@ -216,11 +216,12 @@ main {
 
 }
 
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 600px) and (max-width: 768px) {
         
         #subhead {
-        margin-top: 30px;
-        font-size: 30px;
+        margin-top: 45px;
+        margin-bottom: -60px;
+        font-size: 25px;
     }
         .row {
             display: flex;
@@ -233,10 +234,11 @@ main {
         }
     }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
     
     #subhead {
-        margin-top: 30px;
+        margin-top: 35px;
+        margin-bottom: -50px;
     }
     
     .about {
@@ -248,11 +250,12 @@ main {
     }
 }
 
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: 1024px) and (max-width: 1200px){
         
         #subhead {
             font-size: 40px;;
-            margin-top: 15px;
+            margin-top: 20px;
+            margin-bottom: -40px;
         }
         
         .me {
@@ -281,7 +284,7 @@ main {
 
 
 
-    @media (min-width: 1440px) and (min-width: 2560px) {
+    @media all and (min-width: 1200px) and (max-width: 1440px) {
                 
         nav.row {
             margin: 0;
@@ -293,7 +296,7 @@ main {
             margin-right: 90px;
         }
         .navlink {
-            font-size: 1.7em;
+            font-size: 20px;
         }
 /*
         .content-info {
@@ -309,7 +312,11 @@ main {
 */
         
         #subhead {
-            font-size: 1.37em;
+            font-size: 50px;
+        }
+        
+        .about {
+            font-size: 35px;
         }
         
         p {
@@ -318,5 +325,34 @@ main {
         h2 {
             font-size: 3.3em;
         }
+    }
+
+@media all and (min-width: 1440px) and (max-width: 2880px) {
+    
+    nav.row {
+            margin-top: 60px;
+            width: 100%;
+            justify-content: center;
+        }
+        .navlink {
+            margin-left: 90px;
+            margin-right: 90px;
+        }
+        .navlink {
+            font-size: 20px;
+        }
+    
+    #subhead {
+        font-size: 60px;
+        margin-top: 10px;
+        margin-bottom: -30px;
+    }
+    
+    .about {
+        font-size: 40px;
+    }
+    
+    .me {
+        font-size: 25px;
     }
 }
