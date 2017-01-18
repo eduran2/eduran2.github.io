@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700');
-/*-------------------------- Global ------------------------------------*/
 
-* {
+/*--------------------------Global------------------------------------*/
+
+*{
     box-sizing: border-box;
+  
 }
 
+/*-------------------------Styling------------------------------------*/
 
-/*-------------------------- Page Styling ------------------------------------*/
-div {
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    margin: 0;
-    padding: 0;
+nav a{
+    text-decoration: none;
 }
 
 .knockout-text-one {
@@ -24,18 +20,8 @@ h1 {
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 24vw;
+    font-size: 18vw;
     text-align: center;
-}
-
-nav a {
-    text-decoration: none;
-}
-
-#subhead {
-    position: relative;
-    top: -70px;
-    font-size: 2em;
 }
 
 p {
@@ -44,101 +30,116 @@ p {
     font-weight: 300;
     font-size: 1em;
     color: #373737;
-    text-align: center;
 }
 
-.about {
-    padding-top: .25em;
-    padding-bottom: .2em;
-    margin-top: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-    font-size: 2em;
-    color: #000;
-    text-align: center;
-}
-
-h2 {
+h1{
     margin-top: 0;
     margin-bottom: -.4em;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-size: 2.4em;
-    color: #000;
-    text-align: center;
+    color: #373737;  
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: -.4em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #373737;  
 }
 
 .navlink {
     font-family: 'Source Sans Pro', sans-serif;
-    color: #000;
+    color: #373737;
     text-decoration: none;
     font-weight: 300;
     font-size: 1.1em;
 }
 
-a:active {
-    background: none;
+a:active{
+    background:none;   
 }
 
-p.footer {
+p.footer{
     font-size: .9em;
 }
 
-.ficon {
+.ficon{
     display: inline;
     height: 60%;
     margin-left: .5em;
 }
 
+.top{
+        margin-top: 0;
+    }
 
 /*------------------------Transitions---------------------------------*/
+/*First Frame*/
+#resume {
+    background: darkseagreen;
+    color: #fff;
+    font-weight:700;
+    transition: color .5s;
+}
+
+/*Second Frame*/
+#resume:hover {
+  color: darkseagreen;
+  background: none;
+}
+
 
 
 /*First Frame*/
-
-#resume {
-    color: white;
-    background: rgba(143, 188, 143, .5);
-    border-radius: 5%;
+a {
+    color: #000;
+    font-weight:400;
+    transition: color .5s;
 }
 
-a {
+/*Second Frame*/
+a:hover {
+  color: darkseagreen;
+  background: none;
+}
+
+/*First Frame*/
+#message{
     color: darkseagreen;
-    font-weight: 400;
-    transition: color .5s;
 }
 
 
 /*Second Frame*/
-
-#resume:hover {
-    color: rgba(143, 188, 143, .5);
-    background: none;
+#message:hover {
+    color: goldenrod;
 }
 
-a:hover {
-    color: darkseagreen;
-    background: none;
-}
 
 /*--------------------------Layout------------------------------------*/
 
-.row {
+.row{
     margin: 10px 0;
 }
+
+
+.col {
+    margin-right: 10px;
+    padding: 10px;
+     }
 
 nav {
     flex-wrap: nowrap;
 }
 
-.navlink {
-    display: block;
-    text-decoration: none;
-}
 
-.navlink {
-    margin-right: 10px;
-    padding: 10px;
+.content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
@@ -147,212 +148,121 @@ nav {
     justify-content: space-around; 
 }
 
-/*
-.content-info {
+
+.col {
+    display: block;
+    text-decoration: none;
+}
+
+.about, .tldr{
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.tldr{
+    margin-bottom: 2em;
+}
+
+main{
+    background: #ededed;
+    margin-top: .5em;
+    margin-left: 5%;
+    margin-right: 5%;
+        
+}
+
+.long{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*------------------------Media Queries-------------------------*/
+@media (min-width: 760px){
+    
+    #subhead {
+        font-size: 30px;
+    }
+
+
+@media (min-width: 768px) and (max-width: 768){
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }    
+    
+}
+
+
+@media (max-width: 1024px){
+    #subhead {
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    
+}
+
+
+@media (min-width: 1024px){
+    
+    .long{
+    display: :flex;
+        
+    column-count:3;
+    column-gap:60px;
+        
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 3%;
+} 
+    
+}
+
+
+@media (min-width: 1024px) and (min-width: 1217px){
+    
+    nav.row{
+        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+}
+    
+a.col{
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+.navlink{
+        font-size: 1.7em;
+        }
+    
+.content {
+    flex-flow: row;
+    }
+        
+.content {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
 }
-*/
-
-.navlink {
-    display: block;
-    text-decoration: none;
-}
-
-main {
-    background: #ededed;
-    margin-top: .5em;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.me {
-    padding-top: .25em;
-    padding-bottom: .75em;
-    margin-top: 0;
-    margin-bottom: -.4em;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #000;
-    text-align: center;
-}
-/*------------------------Media Queries-------------------------*/
-
-@media all and (min-width: 320px) and (max-width: 480px) {
-    #subhead {
-        margin-top: 60px;
-        margin-bottom: -65px;
-        font-size: 18px;
-    }
-    
-    .navlink {
-        font-size: 10px;
-    }
-    
-    .about {
-        font-size: 20px;
-    }
-    
-    .me {
-        font-size: 13px;
-    }
-}
-    
-@media screen only (min-width: 480px) and (max-width: 600px) {
-    #subhead {
-        font-size: 25px;
-        margin-top: 50px;
-    }
-    
-    .navlink {
-        font-size: 1em;
-        margin-top: 10px;
-    }
-    
-    .about {
-        font-size: 20px;
-    }
-
-}
-
-    @media all and (min-width: 600px) and (max-width: 768px) {
-        
-        #subhead {
-        margin-top: 45px;
-        margin-bottom: -60px;
-        font-size: 25px;
-    }
-        .row {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-        }
-        
-        .navlink {
-            margin-top: 10px;
-        }
-    }
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
     
     #subhead {
-        margin-top: 35px;
-        margin-bottom: -50px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
     }
     
-    .about {
-        font-size: 30px;
-    }
-    
-    .me {
-        font-size: 20px;
-    }
+p {
+    font-size: 1.4em;
 }
 
-    @media all and (min-width: 1024px) and (max-width: 1200px){
-        
-        #subhead {
-            font-size: 40px;;
-            margin-top: 20px;
-            margin-bottom: -40px;
-        }
-        
-        .me {
-            display: : block;
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-bottom: 3%;
-            font-size: 1.5em;
-        }
-        .about {
-            font-size: 2em;
-        }
-        
-        .navlink {
-            font-size: 1.5em;
-            margin: 30px;
-        }
-        
-        .row {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-        }
-        
+h1{
+    font-size: 3.3em;
     }
 
-
-
-    @media all and (min-width: 1200px) and (max-width: 1440px) {
-                
-        nav.row {
-            margin: 0;
-            width: 100%;
-            justify-content: center;
-        }
-        .navlink {
-            margin-left: 90px;
-            margin-right: 90px;
-        }
-        .navlink {
-            font-size: 20px;
-        }
-/*
-        .content-info {
-            flex-flow: row;
-        }
-        .content-info {
-            
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-        }
-*/
-        
-        #subhead {
-            font-size: 50px;
-        }
-        
-        .about {
-            font-size: 35px;
-        }
-        
-        p {
-            font-size: 1.37em;
-        }
-        h2 {
-            font-size: 3.3em;
-        }
-    }
-
-@media all and (min-width: 1440px) and (max-width: 2880px) {
-    
-    nav.row {
-            margin-top: 60px;
-            width: 100%;
-            justify-content: center;
-        }
-        .navlink {
-            margin-left: 90px;
-            margin-right: 90px;
-        }
-        .navlink {
-            font-size: 20px;
-        }
-    
-    #subhead {
-        font-size: 60px;
-        margin-top: 10px;
-        margin-bottom: -30px;
-    }
-    
-    .about {
-        font-size: 40px;
-    }
-    
-    .me {
-        font-size: 25px;
-    }
-}

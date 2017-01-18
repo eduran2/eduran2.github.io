@@ -6,62 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eduardo Duran</title>
 
-   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
     <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-------------------------- Navigation -------------------------->
-    
-    <nav class="row">
-        <a class="navlink" href="index.html">Home</a>
-        <a class="navlink" href="#">Contact</a>
-        <a class="navlink" href="#">Portfolio</a>
-        <a class="navlink" id="resume" href="img/resume.pdf">Download Resume</a>
+    <!-----------------------------------------------Navigation--------------------------------------------------------->
+       
+        <a class="col navlink" href="index.html">Home</a>
+        <a class="col navlink" href="contact.html">Contact</a>
+        <a id="portfolio" class="col navlink" href="portfolio.html">Portfolio</a>
+        <a class="col navlink" id="resume" href="resume.pdf">Download Resume</a>
     </nav>
 
-    <!-------------------------- Navigation End -------------------------->
+    <!-----------------------------------------------Main Content------------------------------------------------------->
 
-     <div>
-    <h1 class="knockout-text-one">EDUARDO</h1>
-    <p id="subhead">Web Designer, Graphic Designer, Visual Communicator</p>
-</div>
-    <!---------------------------- Content info ---------------------------->
 
-<!--
-    <section class="content-info">
-        <h2>Eduardo Duran</h2>
-        <p id="subhead">Graphic Designer, Visual Communicator</p>
+
+
+    <section class="content">
+        <div>
+            <h1 class="knockout-text-one">EDUARDO</h1>
+        </div>
     </section>
--->
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="content">
+        <section>
+            <p class="row" id="subhead"><em>Web Designer, Graphic Designer, Visual Communicator</em></p>
+        </section>
+    </div>
 
-    <!---------------------------- Content info End ---------------------------->
 
 
-    <!---------------------------- About me ---------------------------->
+    <!------------------------------------------------About Me--------------------------------------------------------->
 
     <main>
 
-        <header class="about">About Me</header>
-        <section class="me">
-            I was born and raised in the small town of Walla Walla, Washington. I am currently a student at Eastern Washington Univeristy in Cheney, Washington. I will be graduating in the year of 2017 and hope to create works that will open new doors for me in the future. Feel free to <a href="#">contact me</a>!
+        <header class="col about"><a name="about"><h2>About me</h2></a></header>
+
+        <section class="col tldr">
+            <p><em>Born and raised in Spokane, Washington, I am a student at Eastern Washington University and will be graduating in 2017 with a Bachelor of Art Degree in Visual Communication Design. I have been an artist for as long as I can remember. I look forward to all the new experiences that are ahead of me! Please feel free to <a href="contact.html" id="message">contact me</a> for any collaborations, questions, or business inquiries. Thanks!</em></p>
+            <br>
+            <hr>
         </section>
 
+        <section class=" col long">
+            <p class="top">Graphic designer, visual communicator and lover of all things art. I have been creating and expressing myself ever since I could pick up a crayon. Art has played a large role in my life whether it's sketching, drawing, painting, digital art, or photography. Art allows me to escape from the stress of every day life. I am always learning and searching for ways to improve and reinvent myself and my artwork. Never trust someone who thinks they know everything and thinks they are the best.</p>
+        </section>
 
     </main>
 
-    <!---------------------------- About me End ---------------------------->
-    
-
-    <!---------------------------------Footer-------------------------------->
+    <!------------------------------------------------Footer--------------------------------------------------------->
     <footer class="row">
         <p class="footer"> Eduardo Duran 2017
             <a href="#"><img class="ficon" src="images/facebook.svg" alt="Facebook Icon"></a>
         </p>
     </footer>
-    
-<!----------------------------- Scripts ------------------------------->
-
 </body>
+
+</html>
