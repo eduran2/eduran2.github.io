@@ -205,7 +205,7 @@ main {
     @media (min-width: 1024px) {
         
         #subhead {
-            font-size: 1.37em;
+            font-size: 3.5em;
         }
         .me {
             display: : block;
@@ -213,12 +213,21 @@ main {
             margin-left: 5%;
             margin-right: 5%;
             padding-bottom: 3%;
+            font-size: 2em;
+        }
+        .about {
+            font-size: 2.5em;
+        }
+        
+        .navlink {
+            font-size: 2em;
+            margin-top: 30px;
         }
     }
 
 
 
-    @media (min-width: 1024px) and (min-width: 1217px) {
+    @media (min-width: 1440px) and (min-width: 2560px) {
                 
         nav.row {
             margin: 10px 0;
