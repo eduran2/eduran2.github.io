@@ -179,15 +179,44 @@ main {
 }
 /*------------------------Media Queries-------------------------*/
 
-@media all and (min-width: 360px) {
+@media all and (min-width: 320px) {
     #subhead {
         margin-top: 60px;
         margin-bottom: -65px;
+        font-size: 18px;
+    }
+    
+    .navlink {
+        font-size: 10px;
+    }
+    
+    .about {
         font-size: 20px;
+    }
+    
+    .me {
+        font-size: 13px;
     }
 }
     
-    @media all and (min-width: 768px) {
+@media all and (min-width: 480px) {
+    #subhead {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    
+    .navlink {
+        font-size: .5em;
+        margin-top: 10px;
+    }
+    
+    .about {
+        font-size: 20px;
+    }
+
+}
+
+    @media all and (min-width: 600px) {
         
         #subhead {
         margin-top: 30px;
@@ -203,6 +232,21 @@ main {
             margin-top: 10px;
         }
     }
+
+@media all and (min-width: 768px) {
+    
+    #subhead {
+        margin-top: 30px;
+    }
+    
+    .about {
+        font-size: 30px;
+    }
+    
+    .me {
+        font-size: 20px;
+    }
+}
 
     @media all and (min-width: 1024px) {
         
