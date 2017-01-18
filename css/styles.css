@@ -18,11 +18,10 @@ h1 {
 }
 
 .knockout-text-one {
-    color: white;
+    color: black;
     font-family: 'Oswald', sans-serif;
-    background: url(/images/Whiskey-Mag3.jpg) no-repeat;
+    background: white;
     background-size: cover;
-    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 28vw;
     text-align: center;
@@ -115,8 +114,24 @@ a:hover {
     background: none;
 }
 
-
 /*--------------------------Layout------------------------------------*/
+
+#slideshow img {
+object-fit: cover;
+position: absolute;
+top: 10em;
+left: 0;
+right: 0;
+margin: auto;
+    border: solid 10px;
+    width: 90%;
+    height: 28%;
+}
+
+div img {
+    width: 50%;
+    height: 50%;
+}
 
 .row {
     margin: 10px 0;
