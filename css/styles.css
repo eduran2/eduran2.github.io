@@ -20,8 +20,9 @@ h1 {
 .knockout-text-one {
     color: black;
     font-family: 'Oswald', sans-serif;
-    background: white;
+    background: url('/images/poster.jpg') no-repeat;
     background-size: cover;
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 28vw;
     text-align: center;
@@ -116,23 +117,6 @@ a:hover {
 
 /*--------------------------Layout------------------------------------*/
 
-#slideshow img {
-object-fit: cover;
-position: absolute;
-top: 10em;
-left: 0;
-right: 0;
-margin: auto;
-    border: solid 10px;
-    width: 90%;
-    height: 28%;
-}
-
-div img {
-    width: 50%;
-    height: 50%;
-}
-
 .row {
     margin: 10px 0;
 }
@@ -203,6 +187,7 @@ main {
     }
     @media (min-width: 1024px) {
         
+        
         .me {
             display: : block;
             column-gap: 60px;
@@ -212,7 +197,7 @@ main {
         }
     }
     @media (min-width: 1024px) and (min-width: 1217px) {
-        
+                
         nav.row {
             margin: 10px 0;
             width: 100%;
