@@ -218,6 +218,7 @@ main {
         .navlink {
             font-size: 1.7em;
         }
+/*
         .content-info {
             flex-flow: row;
         }
@@ -228,8 +229,11 @@ main {
             justify-content: center;
             align-items: center;
         }
+*/
         
         #subhead {
+            position: relative;
+            top: -35px;
             font-size: 1.37em;
         }
         
