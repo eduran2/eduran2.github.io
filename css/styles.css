@@ -179,7 +179,15 @@ main {
 }
 /*------------------------Media Queries-------------------------*/
 
+@media (min-width: 360px) {
+    #subhead {
+        margin-top: 0 auto;
+        font-size: 2em;
+    }
+}
+    
     @media (min-width: 768px) and (max-width: 768) {
+        
         .row {
             display: flex;
             flex-flow: row wrap;
@@ -187,6 +195,7 @@ main {
         }
     }
     @media (max-width: 1024px) {
+       
         .row {
             display: flex;
             flex-flow: row wrap;
@@ -195,7 +204,9 @@ main {
     }
     @media (min-width: 1024px) {
         
-        
+        #subhead {
+            font-size: 1.37em;
+        }
         .me {
             display: : block;
             column-gap: 60px;
@@ -204,6 +215,9 @@ main {
             padding-bottom: 3%;
         }
     }
+
+
+
     @media (min-width: 1024px) and (min-width: 1217px) {
                 
         nav.row {
@@ -232,8 +246,6 @@ main {
 */
         
         #subhead {
-            position: relative;
-            top: -35px;
             font-size: 1.37em;
         }
         
