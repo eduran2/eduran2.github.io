@@ -149,6 +149,7 @@ footer {
 }
 
 figcaption {
+    margin: auto;
     color: black;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 1em;
