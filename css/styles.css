@@ -31,17 +31,6 @@ nav a{
     text-align: center;
 }
 
-.knockout-text {
-    color: black;
-    font-family: 'Oswald', sans-serif;
-    background: url('/images/binary.gif') repeat;
-    background-size: contain;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 17vw;
-    text-align: center;
-}
-
 section p {
     text-align: center;
 }
