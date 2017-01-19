@@ -24,10 +24,7 @@ nav a{
 
 main{
     background: #ededed;
-    margin-top: .5em;
-    margin-left: 5%;
-    margin-right: 5%;
-        
+    margin: auto;
 }
 
 .row{
@@ -210,12 +207,15 @@ a:hover {
 
 /* Gallery Styling */
 .gallery {
+    margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 figure {
+    text-align: center;
+    margin: 0;
   color: white;
   font-size: 24px;
   display: flex;
@@ -248,8 +248,11 @@ figure {
         justify-content: space-around;
     }  
     
-    figcaption {
+    main {
         margin: auto;
+display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
 }
 
@@ -299,8 +302,5 @@ p {
     margin: auto;
     font-size: 1.5em;
 }
-        
-    main{
-        margin: auto;
-    }
+
     }
