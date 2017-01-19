@@ -149,7 +149,6 @@ footer {
 }
 
 figcaption {
-    margin: auto;
     color: black;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 1em;
@@ -247,7 +246,11 @@ figure {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-    }    
+    }  
+    
+    figcaption {
+        margin: auto;
+    }
 }
 
 
