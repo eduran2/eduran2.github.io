@@ -9,6 +9,11 @@
 
 /*-------------------------Styling------------------------------------*/
 
+figure {
+    justify-content: center;
+    margin: auto;
+}
+
 .me {
     width: 90%;
         height: 100%;
@@ -28,6 +33,17 @@ nav a{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 18vw;
+    text-align: center;
+}
+
+.knockout-text {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    background: url('/images/binary.gif') repeat;
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 17vw;
     text-align: center;
 }
 
@@ -60,6 +76,17 @@ h2{
     font-size: 2em;
     color: #373737;  
 }
+
+h3, 
+h4,
+h5,
+h6,
+h8 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:700;
+    text-align: center;
+}
+
 
 .navlink {
     font-family: 'Source Sans Pro', sans-serif;
@@ -130,6 +157,11 @@ a:hover {
 
 
 /*--------------------------Layout------------------------------------*/
+
+.gallery {
+     margin-right: 10px;
+    padding: 10px;
+}
 
 .row{
     margin: 10px 0;
