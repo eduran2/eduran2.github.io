@@ -9,9 +9,15 @@
 
 /*-------------------------Styling------------------------------------*/
 
-figure {
-    justify-content: center;
-    margin: auto;
+figure img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+  display: inline-block;
+    align-content: center;
+  width: auto;
+    
 }
 
 
@@ -79,6 +85,7 @@ h2{
 }
 
 h3 {
+    font-size: 3em;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight:700;
     text-align: center;
@@ -153,6 +160,14 @@ a:hover {
 
 
 /*--------------------------Layout------------------------------------*/
+
+.lg-backdrop {
+    background: #ededed;
+}
+
+.lg-image {
+    box-shadow: 0 0 30px #333;
+}
 
 .gallery {
     justify-content: center;
@@ -349,7 +364,7 @@ a.col{
     
 p {
     margin: auto;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 h1{
