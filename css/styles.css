@@ -237,7 +237,7 @@ textarea:focus {
 }
 
 /*------------------------ Media Queries -------------------------*/
-@media (min-width: 760px){
+@media (min-width: 760px) and (max-width 640px){
     
     nav.row {
         margin-top: 20px;
@@ -254,9 +254,6 @@ textarea:focus {
         margin-bottom: -70px;
     }
     
-    .me {
-        margin: auto;
-    }
 
 
 @media (max-width: 768){
@@ -265,7 +262,9 @@ textarea:focus {
         flex-flow: row wrap;
         justify-content: space-around;
     }    
-    
+    .me {
+        margin: auto;
+    }
 }
 
 
