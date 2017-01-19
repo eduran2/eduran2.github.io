@@ -13,11 +13,12 @@ nav a{
     text-decoration: none;
 }
 
+
 .knockout-text-one {
     color: black;
     font-family: 'Oswald', sans-serif;
-    background: url('/images/poster.jpg') no-repeat;
-    background-size: cover;
+    background: url('/images/binary.gif') repeat;
+    background-size: contain;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 18vw;
@@ -79,7 +80,7 @@ p.footer{
 /*------------------------Transitions---------------------------------*/
 /*First Frame*/
 #resume {
-    background: darkseagreen;
+    background: green;
     color: #fff;
     font-weight:700;
     transition: color .5s;
@@ -87,7 +88,7 @@ p.footer{
 
 /*Second Frame*/
 #resume:hover {
-  color: darkseagreen;
+  color: green;
   background: none;
 }
 
@@ -102,13 +103,13 @@ a {
 
 /*Second Frame*/
 a:hover {
-  color: darkseagreen;
+  color: green;
   background: none;
 }
 
 /*First Frame*/
 #message{
-    color: darkseagreen;
+    color: green;
 }
 
 
@@ -154,6 +155,10 @@ nav {
     text-decoration: none;
 }
 
+.about {
+    text-align: center;
+}
+
 .about, .tldr{
     margin-left:5%;
     margin-right:5%;
@@ -169,11 +174,6 @@ main{
     margin-left: 5%;
     margin-right: 5%;
         
-}
-
-.long{
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 /*------------------------Media Queries-------------------------*/
@@ -204,22 +204,6 @@ main{
         flex-flow: row wrap;
         justify-content: space-around;
     }
-    
-}
-
-
-@media (min-width: 1024px){
-    
-    .long{
-    display: :flex;
-        
-    column-count:3;
-    column-gap:60px;
-        
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 3%;
-} 
     
 }
 
