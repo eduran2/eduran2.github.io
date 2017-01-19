@@ -9,10 +9,13 @@
 
 /*-------------------------Styling------------------------------------*/
 
+#me {
+    margin-bottom: 30px;
+}
+
 nav a{
     text-decoration: none;
 }
-
 
 .knockout-text-one {
     color: black;
@@ -180,15 +183,78 @@ main{
         
 }
 
-/*------------------------Media Queries-------------------------*/
+
+/*------------------------ Contacting Form -----------------------*/
+form {
+    border: solid lightgray .1em;
+    box-shadow: 0px 9px 21px -2px rgba(0,0,0,.5);
+    margin-top: 6em;
+    margin-bottom: 20em;
+    background: none;  
+    padding: 10px;
+}
+
+textarea{
+    width:30em;
+    height: 15em;
+}
+
+
+label p{
+    font-size: 1em;
+    margin-bottom: -9px;
+}
+
+label,  textarea{
+    display: block;
+    margin: 10px;
+    transition: background 1s;
+}
+
+input {
+    margin-left: 30%;
+}
+
+input[type=submit]{
+    background: green;
+    margin: 10px;
+    margin-left: 40%;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    transition: background 1s;
+}
+
+input:hover[type=submit]{
+    background: #373737;
+}
+
+input:focus,
+textarea:focus {
+    background: lightyellow;
+    outline: none;
+}
+
+/*------------------------ Media Queries -------------------------*/
 @media (min-width: 760px){
     
+    nav.row {
+        margin-top: 20px;
+    }
+    
     #subhead {
-        font-size: 30px;
+        margin-top: .1em;
+        margin:auto;
+        font-size: 25px;
+    }
+    
+    h1 {
+        margin-top: 30px;
+        margin-bottom: -70px;
     }
 
 
-@media (min-width: 768px) and (max-width: 768){
+@media (max-width: 768){
     .row {
         display: flex;
         flex-flow: row wrap;
@@ -200,19 +266,19 @@ main{
 
 @media (max-width: 1024px){
     #subhead {
-        margin-top: -20px;
-        margin-bottom: 30px;
+        margin-bottom: px;
     }
     .row {
+        margin: auto;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-    }
+    }    
     
 }
 
 
-@media (min-width: 1024px) and (min-width: 1217px){
+@media (min-width: 1024px) and (max-width: 2880px){
     
     nav.row{
         margin: 10px 0;
@@ -234,6 +300,7 @@ a.col{
     }
         
 .content {
+    margin: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -241,16 +308,39 @@ a.col{
 }
     
     #subhead {
+        font-size: 3em;
+        margin-bottom: 30px;
         display: flex;
         justify-content: center;
         align-items:center;
     }
     
 p {
-    font-size: 1.4em;
+    margin: auto;
+    font-size: 1.5em;
 }
 
 h1{
+    margin: auto;
+    margin-bottom: -100px;
     font-size: 3.3em;
+    }
+    
+    .about {
+        margin: auto;
+        font-size: 1.6em;
+    }
+    
+    #name {
+        font-size: 5em;
+    }
+    
+    .me{
+        margin-top: 20px;
+    }
+    
+    main{
+        margin: auto;
+    }
     }
 
