@@ -183,6 +183,7 @@ figure {
     padding: 10px;
 }
 
+/*
 a img {
     width: 40%;
     margin: auto;
@@ -190,6 +191,7 @@ a img {
     display: flex;
     padding: 1em;
 }
+*/
 
 .row{
     margin: 10px 0;
@@ -298,6 +300,19 @@ textarea:focus {
 
 /*------------------------ Media Queries -------------------------*/
 @media (min-width: 760px){
+    .ficon{
+    display: inline;
+    height: 60%;
+    margin-left: .5em;
+}
+    
+     a img {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    padding: 1em;
+}
     
     nav.row {
         margin-top: 20px;
@@ -317,6 +332,7 @@ textarea:focus {
 
 
 @media (max-width: 768){
+    
     .row {
         display: flex;
         flex-flow: row wrap;
