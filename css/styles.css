@@ -184,11 +184,13 @@ figure {
 }
 
 a img {
-    width: 40%;
+    width: 45%;
+    padding: .5em;
     margin: auto;
-    justify-content: center;
     display: flex;
-    padding: 1em;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .row{
@@ -297,6 +299,7 @@ textarea:focus {
 }
 
 /*------------------------ Media Queries -------------------------*/
+
 @media (min-width: 760px){
     
     nav.row {
@@ -325,6 +328,7 @@ textarea:focus {
     .me {
         margin: auto;
     }
+
 }
 
 
